@@ -1,14 +1,42 @@
+body
+    {
+        font-family: "Sofia", sans-serif;
+      }
+a {
+    text-decoration: none;
+}
+
 h1{
     color: red;
     
 }
+h1,h2,p {
+    text-align: center;
+    margin: none;
+}
 .nav {
+    text-decoration: none;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: no;
+    justify-content: center;
     gap: 40px;
     list-style: none;
+    
+}
+.nav-item{
+    color: cornflowerblue;
     font-size: 24px;
+    line-height: 20px;
+}
+.nav-item:hover{
+    color: brown;
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav-item:active{
+font-size: 30px;
+font-weight: bold;
 }
 .icon{
     height: 20px;
@@ -34,8 +62,8 @@ h1{
 .cat_view{
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: 200px;
+    gap: 20px;
+    width: 30%;
     align-items: center;
     
 }
@@ -46,4 +74,67 @@ h1{
     justify-content: center;
     
     
+}
+.wraper{
+    display: block;
+    width: 400px;
+    height: 200px;
+    background-color: coral;
+    margin: 0px auto 20px auto 20 px;
+    border: 3px solid black;
+    padding: 20px;
+}
+.section_wraper{
+    display: flex;
+    flex-direction: column ;
+    gap: 20px;
+    align-items: center;
+}
+.wraperText{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+.sectionDisc{
+    color: coral;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+
+}
+.image{
+    border-radius: 50px;
+    width:250px;
+    height:400px;
+    border: black 50px;
+
+}
+.regFieldStyle{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.regBottonStyle{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;    
+    font-weight: bold;
+    line-height: 30px;
+    background-color: yellowgreen;
+    text-align: center;
+    cursor: pointer;
+}
+.regBottonStyle:hover{
+    background-color: yellow;
 }
